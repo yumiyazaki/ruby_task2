@@ -15,6 +15,7 @@ class Monster < Character
       offense: params[:offense],
       defense: params[:defense]
     )
+    
     # 親クラスで定義していない処理はそのまま残す
     @transform_flag = false
     @transform_trigger = params[:hp] * CALC_HALF_HP
